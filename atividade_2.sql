@@ -57,3 +57,21 @@ add constraint fk_cod_autor foreign key (id) references autores (id);
 
 alter table livros
 add constraint fk_cod_assunto foreign key (cod_assunto) references assuntos (cod_assunto);
+
+insert into assuntos values(1, 'MICROBIOLOGIA');
+insert into assuntos values(2, 'PROGRAMAÇÃO');
+insert into assuntos values(3, 'FISIOLOGIA');
+insert into assuntos values(4, 'USINAGEM');
+insert into assuntos values(5, 'MICROBIOLOGIA');
+insert into assuntos values(6, 'BANCO DE DADOS');
+insert into assuntos values(7, 'CALCULO');
+insert into assuntos values(8, 'MATERIAIS');
+ 
+insert into livros values ('7374202S2002', 'Os bichos são assim', 'LTC', 300, null, 1);
+insert into livros values ('6815203S442', 'Técnicas de programação estruturada', 'Campus', 253, null, 2);
+insert into livros values ('5889949S3003', 'Ensaios de dureza e de moleza', 'LTC', 330, null, 8);
+insert into livros values ('7374234S2323', 'O funcionamento do intestino', 'LTC', 300, null, 3);
+insert into livros values ('5883342S4343', 'Torno radial: Como funciona a coisa', 'LTC', 505, null, 4);
+insert into livros values ('7374180S2023', 'Bactérias, micróbios e coisas parecidas', 'Erika', 300, null, 1);
+insert into livros values ('6832343S334', 'Teoria de bancos de dados', 'Campus', 450, null, 6);
+insert into livros values ('3335656S1849', 'Calculo diferencial e integral', 'LTC', 300, null, 7);
